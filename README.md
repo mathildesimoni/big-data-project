@@ -73,7 +73,7 @@ It was later decided to use PySpark to perform a deeper cleaning and profiling o
     * Only the "country", "income_group", "year", "che_pc_usd" columns were selected for the cleaned version of dataset1 since these would be the columns of interest for merging and the analytic.
     * The dataframe was filtered to only keep data for the last five years present in the dataset (2018 to 2014, inclusive).
     * All remaining records with NULL values were shown and since these formed a very small minority of the total records in the dataset, they were dropped.
-    * The name of the "country" column was changed to "countries" so that it would not coincide with the name of the "countries" column in dataset2.
+    * The name of the "country" column was changed to "countries" so that it would not coincide with the name of the "countries" column in dataset 2.
     * The names of some countries were renamed to match the names of countries in dataset2 so that merging the two datasets would be done correctly.
     * The final dataset was output.
 
