@@ -58,7 +58,7 @@ This application aims to find the correlation between the type of health care sy
   ![alt text](https://github.com/carla-garcia-medina/big-data-project/blob/main/cleaning_profiling_dataset1/initial_mapreduce_cleaning/screenshots/pasted%20image%200%20(8).png)
   ![alt text](https://github.com/carla-garcia-medina/big-data-project/blob/main/cleaning_profiling_dataset1/initial_mapreduce_cleaning/screenshots/pasted%20image%200%20(9).png)
   
-* Deeper Cleaning and Profiling with Pyspark 
+* Deeper Cleaning and Profiling with Pyspark <br/>
 It was later decided to use PySpark to perform a deeper cleaning and profiling of dataset 1.
   1. Initial Profiling 
   2. **----------TO-DO------------**
