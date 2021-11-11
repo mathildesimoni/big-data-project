@@ -1,23 +1,23 @@
-# README #
+# README
 
-## Rethinking Health Care Systems: What are the effects of governmental/ social or private health insurance on total health expenditure?”  ##
-Carla Garcia Medina and Mathilde Simoni <br />
-Professor Ann Malavet <br />
-Processing Big Data for Analytics Applications <br />
-Fall 2021 <br />
+## Rethinking Health Care Systems: What are the effects of governmental/ social or private health insurance on total health expenditure?
+Carla Garcia Medina and Mathilde Simoni
+Professor Ann Malavet
+Processing Big Data for Analytics Applications
+Fall 2021
 
 
-### Project Description ###
+### Project Description
 
 This application aims to find the correlation between the type of health care system of a country and the country’s total health expenditure. 
 
-### Files ###
+### Files
 * 
 * 
 
-### Analytics steps ###
+### Analytics steps
 
-#### Cleaning and Profiling for dataset1 (health expenditure) ####
+#### Cleaning and Profiling for dataset1 (health expenditure)
 * Pyspark
 
 #### Cleaning and Profiling for dataset2 (coverage) ####
