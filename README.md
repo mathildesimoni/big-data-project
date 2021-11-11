@@ -2,10 +2,10 @@
 
 ## Rethinking Health Care Systems: What are the effects of governmental/ social or private health insurance on total health expenditure?
 
-Carla Garcia Medina and Mathilde Simoni
-Professor Ann Malavet
-Processing Big Data for Analytics Applications
-Fall 2021
+Carla Garcia Medina and Mathilde Simoni <br/>
+Professor Ann Malavet <br/>
+Processing Big Data for Analytics Applications <br/>
+Fall 2021 <br/>
 
 
 ### Project Description
