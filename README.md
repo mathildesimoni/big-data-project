@@ -13,9 +13,26 @@ This application aims to find the correlation between the type of health care sy
 
 ### Files
 * cleaning_profiling_dataset1/:
-*   * initial_mapreduce_cleaning/:
-*   * GHED_data.csv
-*   * expenses_data_cleaning_and_profiling.py
+   * initial_mapreduce_cleaning/:
+      * Clean.class
+        Clean.java
+        CleanMapper.class
+        CleanMapper.java
+        CleanReducer.class
+        CleanReducer.java
+        CountRecs.class
+        CountRecs.java
+        CountRecsMapper.class
+        CountRecsMapper.java
+        CountRecsReducer.class
+        CountRecsReducer.java
+        GHED_data.csv
+        clean.jar
+        countRecs.jar
+        deletefile
+part-r-00000
+   * GHED_data.csv
+   * expenses_data_cleaning_and_profiling.py
 * cleaning_profiling_dataset2
 * README.md
 * joined_datasets_analytics.py
