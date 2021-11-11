@@ -12,8 +12,13 @@ Fall 2021
 This application aims to find the correlation between the type of health care system of a country and the country’s total health expenditure. 
 
 ### Files
-* 
-* 
+* cleaning_profiling_dataset1/:
+*   * initial_mapreduce_cleaning/:
+*   * GHED_data.csv
+*   * expenses_data_cleaning_and_profiling.py
+* cleaning_profiling_dataset2
+* README.md
+* joined_datasets_analytics.py
 
 ### Analytics steps
 
