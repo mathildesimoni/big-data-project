@@ -63,10 +63,12 @@ It was later decided to use PySpark to perform a deeper cleaning and profiling o
   1. Initial Profiling 
   2. **----------TO-DO------------**
 
-#### Cleaning and Profiling for dataset2 (coverage) ####
+#### Cleaning and Profiling for dataset2 (coverage)
 * The first part of the cleaning was done using MapReduce **----------TO-DO------------**
 * Pyspark was used for the second part of cleaning and for profiling **----------TO-DO------------**
 
-#### Merging and First correlation ####
+#### Merging and First correlation
 * **----------TO-DO------------**
 * **----------TO-DO------------**
+
+### Instructions to Run Code
