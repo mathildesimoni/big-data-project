@@ -40,11 +40,11 @@ This application aims to find the correlation between the type of health care sy
 ### Analytics steps
 
 #### Cleaning and Profiling for dataset1 (health expenditure)
-* Pyspark
+* Pyspark **----------TO-DO------------**
 
 #### Cleaning and Profiling for dataset2 (coverage) ####
-* The first part of the cleaning was done using MapReduce
-* Pyspark was used for the second part of cleaning and for profiling
+* The first part of the cleaning was done using MapReduce **----------TO-DO------------**
+* Pyspark was used for the second part of cleaning and for profiling **----------TO-DO------------**
 
 #### Merging and First correlation ####
 * **----------TO-DO------------**
