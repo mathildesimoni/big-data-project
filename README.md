@@ -1,6 +1,6 @@
 # README
 
-## Rethinking Health Care Systems: What are the effects of governmental/ social or private health insurance on total health expenditure?
+## Rethinking Health Care Systems: What are the effects of governmental/social or private health insurance on total health expenditure?
 
 Carla Garcia Medina and Mathilde Simoni <br/>
 Professor Ann Malavet <br/>
