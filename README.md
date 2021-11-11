@@ -12,29 +12,30 @@ Fall 2021
 This application aims to find the correlation between the type of health care system of a country and the country’s total health expenditure. 
 
 ### Files
-* cleaning_profiling_dataset1/:
-   * initial_mapreduce_cleaning/:
-      * Clean.class
-      *  Clean.java
-      * CleanMapper.class
-      * CleanMapper.java
-      * CleanReducer.class
-      * CleanReducer.java
-      * CountRecs.class
-      * CountRecs.java
-      * CountRecsMapper.class
-      * CountRecsMapper.java
-      * CountRecsReducer.class
-      * CountRecsReducer.java
-      * GHED_data.csv
-      * clean.jar
-      * countRecs.jar
-      * part-r-00000
-   * GHED_data.csv
-   * expenses_data_cleaning_and_profiling.py
+* cleaning_profiling_dataset1/ : **----------TO-DO------------**
+   * initial_mapreduce_cleaning/ : **----------TO-DO------------**
+      * Clean.class : **----------TO-DO------------**
+      * Clean.java : **----------TO-DO------------**
+      * CleanMapper.class : **----------TO-DO------------**
+      * CleanMapper.java : **----------TO-DO------------**
+      * CleanReducer.class : **----------TO-DO------------**
+      * CleanReducer.java : **----------TO-DO------------**
+      * CountRecs.class : **----------TO-DO------------**
+      * CountRecs.java : **----------TO-DO------------**
+      * CountRecsMapper.class : **----------TO-DO------------**
+      * CountRecsMapper.java : **----------TO-DO------------**
+      * CountRecsReducer.class : **----------TO-DO------------**
+      * CountRecsReducer.java : **----------TO-DO------------**
+      * GHED_data.csv : **----------TO-DO------------**
+      * clean.jar : **----------TO-DO------------**
+      * countRecs.jar : **----------TO-DO------------**
+      * part-r-00000 : **----------TO-DO------------**
+   * GHED_data.csv : **----------TO-DO------------** 
+   * expenses_data_cleaning_and_profiling.py : **----------TO-DO------------**
 * cleaning_profiling_dataset2
-* README.md
-* joined_datasets_analytics.py
+  * **----------TO-DO------------**
+* README.md : *This file*
+* joined_datasets_analytics.py : **----------TO-DO------------**
 
 ### Analytics steps
 
