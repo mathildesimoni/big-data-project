@@ -33,7 +33,7 @@ This application aims to find the correlation between the type of health care sy
       * part-r-00000 : *output of cleaned dataset after the cleaning MapReduce job*
    * GHED_data.csv : *copy of dataset1 containing information of healthcare expenses by country and year* 
    * expenses_data_cleaning_and_profiling.py : *final pyspark script to clean and profile dataset1*
-* cleaning_profiling_dataset2/ : *directory with files to clean and profile dataset 1*
+* cleaning_profiling_dataset2/ : *directory with files to clean and profile dataset 2*
   * **----------TO-DO------------**
 * README.md : *this file*
 * joined_datasets_analytics.py : **----------TO-DO------------**
@@ -41,6 +41,19 @@ This application aims to find the correlation between the type of health care sy
 ### Analytics steps
 
 #### Cleaning and Profiling for dataset1 (health expenditure)
+* An initial profiling cleaning was done with two MapReduce jobs (contained in the initial_mapreduce_cleaning directory). 
+  1. Initial Profiling
+  ![alt text](https://github.com/carla-garcia-medina/big-data-project/blob/main/cleaning_profiling_dataset1/initial_mapreduce_cleaning/screenshots/pasted%20image%200.png)
+  ![alt text](https://github.com/carla-garcia-medina/big-data-project/blob/main/cleaning_profiling_dataset1/initial_mapreduce_cleaning/screenshots/pasted%20image%200%20(1).png)
+  ![alt text](https://github.com/carla-garcia-medina/big-data-project/blob/main/cleaning_profiling_dataset1/initial_mapreduce_cleaning/screenshots/pasted%20image%200%20(2).png)
+  The CountRecs job was first used to count the number of records in the original dataset1. The number of rows output was 3648. 
+ 2. Initial Cleaning
+  ![alt text](https://github.com/carla-garcia-medina/big-data-project/blob/main/cleaning_profiling_dataset1/initial_mapreduce_cleaning/screenshots/pasted%20image%200%20(4).png)
+  ![alt text](https://github.com/carla-garcia-medina/big-data-project/blob/main/cleaning_profiling_dataset1/initial_mapreduce_cleaning/screenshots/pasted%20image%200%20(5).png)
+  ![alt text](https://github.com/carla-garcia-medina/big-data-project/blob/main/cleaning_profiling_dataset1/initial_mapreduce_cleaning/screenshots/pasted%20image%200%20(6).png)
+  ![alt text](https://github.com/carla-garcia-medina/big-data-project/blob/main/cleaning_profiling_dataset1/initial_mapreduce_cleaning/screenshots/pasted%20image%200%20(7).png)
+ 3. 
+  
 * Pyspark **----------TO-DO------------**
 
 #### Cleaning and Profiling for dataset2 (coverage) ####
