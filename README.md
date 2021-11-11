@@ -66,6 +66,7 @@ It was later decided to use PySpark to perform a deeper cleaning and profiling o
     * A list of the unique values for the countries column was output to see the individual countries present in the dataset.
     * A list of the unique types of income groups present in the dataset was also shown.
     * The covariance between each expense subtype and Current Health Expenditure was calculated.
+    
   2. Cleaning
     * Column names were renamed to improve readability and usability of the dataset (e.g. "income group (2018)" was renamed to "income_group").
     * The data types of the six main helath expenditure columns were casted to integer to be able to perform mathematical operations on these.
@@ -75,6 +76,8 @@ It was later decided to use PySpark to perform a deeper cleaning and profiling o
     * The name of the "country" column was changed to "countries" so that it would not coincide with the name of the "countries" column in dataset2.
     * The names of some countries were renamed to match the names of countries in dataset2 so that merging the two datasets would be done correctly.
     * The final dataset was output.
+
+    **----------ADD SCREENSHOTS------------**
 
 #### Cleaning and Profiling for dataset2 (coverage)
 * The first part of the cleaning was done using MapReduce **----------TO-DO------------**
