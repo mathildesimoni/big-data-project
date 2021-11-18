@@ -128,11 +128,11 @@ It was later decided to use PySpark to perform profiling and a deeper cleaning o
 * **----------TO-DO------------**
 
 ### Instructions to Run Code
-1. Place the input files with dataset1 and dataset2 (`cleaning_profiling_dataset1/GHED_data.csv` and ` cleaning_profiling_dataset2/dataset_initial.csv`) onto hdfs 
+1. Place the input files with dataset1 and dataset2 (`cleaning_profiling_dataset1/GHED_data.csv` and ` cleaning_profiling_dataset2/dataset_initial.csv`) onto hdfs <\br>
 `hadoop fs -put /scratch/work/public/peel/tutorials/Tutorial3/input/people.json /user/<net id>/`
-2. Compile and run the MapReduce job in `cleaning_profiling_dataset2/initial_mapreduce_cleaning/` to make an initial clean of dataset2.
+2. Compile and run the MapReduce job in `cleaning_profiling_dataset2/initial_mapreduce_cleaning/` to make an initial clean of dataset2.<\br>
 	* **----------TO-DO------------**
-3. Follow the below step on peel cluster at the command prompt to connect to python Spark interactive Shell. 
+3. Follow the below step on peel cluster at the command prompt to connect to python Spark interactive Shell. <\br>
 `pyspark --deploy-mode client`
 4. Edit the path in `cleaning_profiling_dataset1/expenses_data_cleaning_and_profiling.py` to correspond to the path where you stored the datasets in hdfs.
 5. Copy and paste commands from `cleaning_profiling_dataset1/expenses_data_cleaning_and_profiling.py` to clean and profile datset1 into the interactive Shell.
