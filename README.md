@@ -134,9 +134,9 @@ It was later decided to use PySpark to perform profiling and a deeper cleaning o
 	* **----------TO-DO------------**
 3. Follow the below step on peel cluster at the command prompt to connect to python Spark interactive Shell: <br/>
 `pyspark --deploy-mode client`
-4. Edit the path in `cleaning_profiling_dataset1/expenses_data_cleaning_and_profiling.py` to correspond to the path where you stored the datasets in hdfs.
+4. Edit the path in `cleaning_profiling_dataset1/expenses_data_cleaning_and_profiling.py` to correspond to the path where you stored dataset1 in hdfs.
 5. Copy and paste commands from `cleaning_profiling_dataset1/expenses_data_cleaning_and_profiling.py` to clean and profile datset1 into the interactive Shell.
-6. Edit the path in `cleaning_profiling_dataset1/expenses_data_cleaning_and_profiling.py` to correspond to the path where you stored the datasets in hdfs.
+6. Edit the path in `cleaning_profiling_dataset1/expenses_data_cleaning_and_profiling.py` to correspond to the path where you stored the result of the initial mapreduce job (from step 2) in hdfs.
 7. Copy and paste commands from `cleaning_profiling_dataset1/expenses_data_cleaning_and_profiling.py` to clean and profile datset1 into the interactive Shell.
 8. Copy and paste commands from `joined_datasets_analytics` to merge the two datasets and compute the merged analytics.
 
