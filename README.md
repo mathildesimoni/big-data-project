@@ -114,6 +114,8 @@ It was later decided to use PySpark to perform profiling and a deeper cleaning o
 		* South Africa and Brazil had NULL values for the 5 years so they were dropped from the dataset.
         * Greece, Latvia and Luxembourg had NULL values for some years. Those specific records were dropped (not all the years).
     * The final dataset was output.
+    
+    **----------ADD SCREENSHOTS------------**
 
 #### Merging and First correlation
 * **----------TO-DO------------**
