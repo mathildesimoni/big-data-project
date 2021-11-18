@@ -92,6 +92,12 @@ It was later decided to use PySpark to perform a deeper cleaning and profiling o
 #### Cleaning and Profiling for dataset2 (coverage)
 * The first part of the cleaning was done using MapReduce (contained in the initial_mapreduce_cleaning directory). <br/>
 The Clean job was used to clean the data. The file was first filtered to keep the data for the years 2014 to 2018 only. Then, the file was reorganized to contain 8 columns: "country", "year", "Total health care", "Total private", "Primary private", "Duplicate private", "Complementary private", "Supplementary private". The last 6 columns collect percentages of total population for different types of healthcare coverage for 39 country between 2014 and 2018. Finally, a missing value was replaced with the string "NONE".
+![alt text](https://github.com/carla-garcia-medina/big-data-project/blob/29c1ade5637d0fac59a5573fb948bbbf279e5112/cleaning_profiling_dataset2/initial_mapreduce_cleaning/screenshots/(1).png)
+![alt text](https://github.com/carla-garcia-medina/big-data-project/blob/29c1ade5637d0fac59a5573fb948bbbf279e5112/cleaning_profiling_dataset2/initial_mapreduce_cleaning/screenshots/(2).png)
+![alt text](https://github.com/carla-garcia-medina/big-data-project/blob/29c1ade5637d0fac59a5573fb948bbbf279e5112/cleaning_profiling_dataset2/initial_mapreduce_cleaning/screenshots/(3).png)
+![alt text](https://github.com/carla-garcia-medina/big-data-project/blob/29c1ade5637d0fac59a5573fb948bbbf279e5112/cleaning_profiling_dataset2/initial_mapreduce_cleaning/screenshots/(4).png)
+![alt text](https://github.com/carla-garcia-medina/big-data-project/blob/29c1ade5637d0fac59a5573fb948bbbf279e5112/cleaning_profiling_dataset2/initial_mapreduce_cleaning/screenshots/(5).png)
+![alt text](https://github.com/carla-garcia-medina/big-data-project/blob/29c1ade5637d0fac59a5573fb948bbbf279e5112/cleaning_profiling_dataset2/initial_mapreduce_cleaning/screenshots/(6).png)
 
 * Pyspark was used for the second part of cleaning and for profiling <br/>
 It was later decided to use PySpark to perform profiling and a deeper cleaning of dataset 2.
