@@ -2,10 +2,11 @@
 from pyspark.sql.types import StructType, StructField, StringType, FloatType, IntegerType
 from pyspark.sql.functions import *
 from pyspark.sql import SparkSession
+from pyspark.sql.functions import col
 
 # define directory path
-# path = "project/code_drop1/dataset_cleaned1.csv"
-path = "hw8/dataset_cleaned1.csv"
+path = "project/code_drop1/dataset_cleaned1.csv"
+# path = "hw8/dataset_cleaned1.csv"
 
 # convert data source to spark dataframe
 coverage_df = sqlContext.read.csv(path) 
@@ -39,14 +40,46 @@ coverage_df.printSchema()
 coverage_df.show()
 
 #---GENERAL DATA PROFILING---
-coverage_df.describe(["year", \
-	"governmental_coverage", \
-	"total_private_coverage", \
-	"primary_private_coverage", \
-	"duplicate_private_coverage", \
-	"complementary_private_coverage", \
-	"supplementary_private_coverage"]).show()
 
+year = 2018 # parameter can be changed depending on which year we analyze
+
+coverage_df_by_year = coverage_df.where(col("year") == year)
+
+columns = ["governmental_coverage", \
+    "total_private_coverage", \
+    "primary_private_coverage", \
+    "duplicate_private_coverage", \
+    "complementary_private_coverage", \
+    "supplementary_private_coverage"]
+profiling_df = coverage_df_by_year.describe(columns)
+profiling_df.show()
+profiling_df.printSchema()
+
+# print statistics for every column variable (except year and country)
+for column in columns:
+    print("---------")
+    print("VARIABLE: " + column)
+    print("---------")
+    
+    # minimum value
+    min_val = profiling_df.where(col("summary") == "min").select(column).collect()[0][0]
+    countries_min_val = coverage_df.where(col(column) == min_val).select("country")
+    print("- minimum value: " + min_val)
+    print("countries with the minimun value: ")
+    countries_min_val.show(200)
+    
+    # maximum value
+    max_val = profiling_df.where(col("summary") == "max").select(column).collect()[0][0]
+    countries_max_val = coverage_df.where(col(column) == max_val).select("country")
+    print("- maximum value: " + max_val)
+    print("countries with the maximum value: ")
+    countries_max_val.show(200)
+    
+    # mean value
+    mean_val = profiling_df.where(col("summary") == "mean").select(column).collect()[0][0]
+    print("- mean: " + mean_val)
+    
+    print("\n")
 
 #---PREPARE DATAFRAME FOR MERGING WITH SECOND DATA SOURCE ---
 
@@ -59,7 +92,7 @@ governmental_coverage_df.filter(governmental_coverage_df.governmental_coverage.i
 governmental_coverage_df = governmental_coverage_df.filter((governmental_coverage_df.country != "Brazil") & (governmental_coverage_df.country != "South Africa"))
 # remove Greece, Latvia and luxembourg for the years they have no value
 governmental_coverage_df = governmental_coverage_df.filter(governmental_coverage_df.governmental_coverage.isNotNull())
-
+governmental_coverage_df.show()
 
 # dataframe 2: private_coverage_df
 # keep only the columns that will be used for merging
@@ -67,6 +100,6 @@ private_coverage_df = coverage_df.select("country", "year", "primary_private_cov
 # show records with NULL values
 private_coverage_df.filter(private_coverage_df.primary_private_coverage.isNull()).show()
 private_coverage_df.filter(private_coverage_df.primary_private_coverage.isNull()).count()
-# too many NULL values (79)
+# too many NULL values (79). We can't use this variable
 
 
