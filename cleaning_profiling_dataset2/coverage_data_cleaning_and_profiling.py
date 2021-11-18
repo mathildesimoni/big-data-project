@@ -61,23 +61,24 @@ for column in columns:
     print("VARIABLE: " + column)
     print("---------")
     
+    # mean value
+    mean_val = profiling_df.where(col("summary") == "mean").select(column).collect()[0][0]
+    print("- mean value: " + mean_val)
+    print("")
+    
     # minimum value
     min_val = profiling_df.where(col("summary") == "min").select(column).collect()[0][0]
-    countries_min_val = coverage_df.where(col(column) == min_val).select("country")
+    countries_min_val = coverage_df_by_year.where(col(column) == min_val).select("country")
     print("- minimum value: " + min_val)
     print("countries with the minimun value: ")
     countries_min_val.show(200)
     
     # maximum value
     max_val = profiling_df.where(col("summary") == "max").select(column).collect()[0][0]
-    countries_max_val = coverage_df.where(col(column) == max_val).select("country")
+    countries_max_val = coverage_df_by_year.where(col(column) == max_val).select("country")
     print("- maximum value: " + max_val)
     print("countries with the maximum value: ")
     countries_max_val.show(200)
-    
-    # mean value
-    mean_val = profiling_df.where(col("summary") == "mean").select(column).collect()[0][0]
-    print("- mean: " + mean_val)
     
     print("\n")
 
