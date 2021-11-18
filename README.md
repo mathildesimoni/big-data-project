@@ -96,20 +96,20 @@ The Clean job was used to clean the data. The file was first filtered to keep th
 * Pyspark was used for the second part of cleaning and for profiling <br/>
 It was later decided to use PySpark to perform profiling and a deeper cleaning of dataset 2.
   1. Profiling 
-	* Descriptive statistics of the following columns was obtained including the counts, means, standard deviations, minimum values, and maximum values.
-		* "year"
+	* Descriptive statistics was obtained including the counts, means, standard deviations, minimum values, and maximum values for the following columns and a particular year (2018 by default, can be changed)
 		* "governmental_coverage"
 		* "total_private_coverage"
 		* "primary_private_coverage"
 		* "duplicate_private_coverage"
 		* "complementary_private_coverage"
 		* "supplementary_private_coverage"
+    * For each column, countries with the minimum, maximum and mean values were displayed.
 
   2. Cleaning
    * Column names were renamed to improve readability and usability of the dataset (e.g. "_c3" was renamed to "total_private_coverage").
    * The data types of the six main coverage columns were casted to float to be able to perform mathematical operations on these ("NONE" values were converted to NULL values).
     * The "\t" character was removed from all the values in the "year" column in order to cast the data type of this column to integer.
-    * Only the "country", "year", "governmental_coverage" columns were selected for the cleaned version of dataset2 since these would be the columns of interest for merging and the analytic.
+    * Only the "country", "year", "governmental_coverage" columns were selected for the cleaned version of dataset2 since these would be the columns of interest for merging and the analytic (The other interesting column "primary_private_coverage" was studied but contained too many NULL values: 79 for all countries and all years. Hence, it was also dropped). 
     * All remaining records with NULL values were shown. 
 		* South Africa and Brazil had NULL values for the 5 years so they were dropped from the dataset.
         * Greece, Latvia and Luxembourg had NULL values for some years. Those specific records were dropped (not all the years).
@@ -122,3 +122,5 @@ It was later decided to use PySpark to perform profiling and a deeper cleaning o
 * **----------TO-DO------------**
 
 ### Instructions to Run Code
+
+* Use the interactive shell pySpark
