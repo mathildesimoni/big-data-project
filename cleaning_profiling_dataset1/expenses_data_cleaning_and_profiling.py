@@ -2,7 +2,7 @@
 from pyspark.sql.functions import *
 from pyspark.sql.types import StructType, StructField, StringType, FloatType, IntegerType
 from pyspark.sql import SparkSession
-#import pyspark.sql.SparkSession
+from pyspark.sql.functions import col
 
 # create path to input file
 #path = "project/code_drop1/GHED_data.csv"
@@ -28,10 +28,10 @@ expenses_df = expenses_df.withColumn("phc_usd_pc", expenses_df.phc_usd_pc.cast(I
 # Primary Health Care (PHC) Expenditure per Capita in US$
 expenses_df.describe(['che_pc_usd','gghed_pc_usd','pvtd_pc_usd','oop_pc_usd','phc_usd_pc']).show()
 
-expenses_df.withColumn('gghed_over_che', expenses_df['gghed_pc_usd'] / expenses_df['che_pc_usd'])
-expenses_df.withColumn('pvtd_over_che', expenses_df['pvtd_pc_usd'] / expenses_df['che_pc_usd'])
-expenses_df.withColumn('oop_over_che', expenses_df['oop_pc_usd'] / expenses_df['che_pc_usd'])
-expenses_df.withColumn('phc_over_che', expenses_df['phc_usd_pc'] / expenses_df['che_pc_usd'])
+expenses_df.withColumn('gghed_over_che', col('gghed_pc_usd') / col('che_pc_usd'))
+expenses_df.withColumn('pvtd_over_che', col('pvtd_pc_usd') / col('che_pc_usd'))
+expenses_df.withColumn('oop_over_che', col('oop_pc_usd') / col('che_pc_usd'))
+expenses_df.withColumn('phc_over_che', col('phc_usd_pc') / col('che_pc_usd'))
 
 expenses_df.describe(['gghed_over_che','pvtd_over_che','oop_over_che','phc_over_che']).show()
 
