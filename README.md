@@ -47,8 +47,12 @@ This application aims to find the correlation between the type of health care sy
    * coverage_data_cleaning_and_profiling.py : *final pyspark script to clean and profile dataset2*
 * screenshots/
 	* etl_cleaning_profiling_dataset1/ : *screenshots for dataset1*
+		* mapreduce_cleaning_and_profiling/ : *mapreduce screenshots for dataset1*
+		* pyspark_cleaning_and_profiling/: *pyspark screenshots for dataset1*
 	* etl_cleaning_profiling_dataset2/ : *screenshots for dataset2*
-	* final_analytic / : *screenshots for merged dataset*
+		* initial_mapreduce_cleaning/ : *mapreduce screenshots for dataset2*
+		* pyspark_cleaning_and_profiling/: *pyspark screenshots for dataset2*
+	* final_analytic/ : *screenshots for merged dataset*
 * README.md : *this file*
 * joined_datasets_analytics.py : *final pyspark script for merging and correlation between the 2 datasets*
 
