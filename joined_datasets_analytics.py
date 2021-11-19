@@ -2,7 +2,7 @@ from pyspark.sql.types import StructType, StructField, StringType, FloatType, In
 from pyspark.sql.functions import *
 
 # 1st corelation for year 2018
-governmental_coverage_2018_df = governmental_coverage_df.filter((governmental_coverage_df.year == 2018)
+governmental_coverage_2018_df = governmental_coverage_df.filter(governmental_coverage_df.year == 2018)
 governmental_coverage_2018_df.show()
 governmental_coverage_2018_df.count()
 
