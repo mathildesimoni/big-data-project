@@ -28,10 +28,10 @@ expenses_df = expenses_df.withColumn("phc_usd_pc", expenses_df.phc_usd_pc.cast(I
 # Primary Health Care (PHC) Expenditure per Capita in US$
 expenses_df.describe(['che_pc_usd','gghed_pc_usd','pvtd_pc_usd','oop_pc_usd','phc_usd_pc']).show()
 
-expenses_df.withColumn('gghed_over_che', col('gghed_pc_usd') / col('che_pc_usd'))
-expenses_df.withColumn('pvtd_over_che', col('pvtd_pc_usd') / col('che_pc_usd'))
-expenses_df.withColumn('oop_over_che', col('oop_pc_usd') / col('che_pc_usd'))
-expenses_df.withColumn('phc_over_che', col('phc_usd_pc') / col('che_pc_usd'))
+expenses_df = expenses_df.withColumn('gghed_over_che', col('gghed_pc_usd') / col('che_pc_usd'))
+expenses_df = expenses_df.withColumn('pvtd_over_che', col('pvtd_pc_usd') / col('che_pc_usd'))
+expenses_df = expenses_df.withColumn('oop_over_che', col('oop_pc_usd') / col('che_pc_usd'))
+expenses_df = expenses_df.withColumn('phc_over_che', col('phc_usd_pc') / col('che_pc_usd'))
 
 expenses_df.describe(['gghed_over_che','pvtd_over_che','oop_over_che','phc_over_che']).show()
 
@@ -40,7 +40,7 @@ expenses_df.select('country').distinct().sort('country').show(200)
 income_group_df = expenses_df.select('income_group').distinct()
 income_group_df.show()
 income_group_collect = income_group_df.collect()
-for year in range(2015, 2016): # parameters can be changed depending on how many years want to be analyzed
+for year in range(2015, 2019): # parameters can be changed depending on how many years want to be analyzed
 	for group in income_group_collect:
 		print(year, str(group['income_group']))
 		expenses_by_income_group_df = expenses_df.filter("income_group = '{0}' AND year = {1}".format(str(group['income_group']), year))
