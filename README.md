@@ -66,7 +66,7 @@ This application aims to find the correlation between the type of health care sy
   The Clean job was then used to clean the data. All columns except for country and che_pc_usd were removed. Additionally, records with missing values in the che_pc_usd field were dropped. Only the values with information for the year 2018 were kept since this was the initial year of interest for the analytic.
   3. Final Profiling <br/>
   Running the CountRecs on the cleaned dataset (output in file with name part-r-00000), the number of rows output was 188. The new number of rows did not match the original one. The main reasons for this difference is that only rows with a year value of “2018” were selected since this was the initial year of interest for the analysis. Given that the data contained years from 2000 to 2018 inclusive, this resulted in a drastic reduction in the number of rows. Additionally, a few records had missing values for the che_pc_usd column. These records were removed since they were sparse and the countries in the dataset are extremely different to one another, such that imputing values could result in bias.<br/>
-**Screenshots for this step can be found in the directory screenshots/etl_cleaning_profiling_dataset1/mapreduce_cleaning_and_profiling/**
+*Screenshots for this step can be found in the directory screenshots/etl_cleaning_profiling_dataset1/mapreduce_cleaning_and_profiling/*
   
 * Deeper Cleaning and Profiling with Pyspark <br/>
 It was later decided to use PySpark to perform a deeper cleaning and profiling of dataset 1.
@@ -121,17 +121,8 @@ It was later decided to use PySpark to perform profiling and a deeper cleaning o
    * First, the 2 dataframes were filtered to only keep data for the year being analyzed.
    * Then, they were merged in a new dataframe `df` using the pyspark inner join function based on the country name.
    * Finally, the corellation was calculated using the pyspark corr function.
-   * The describe function was used to obtain statistics about the resulting dataset.
-
-![alt text](https://github.com/carla-garcia-medina/big-data-project/blob/main/screenshots/1.png)
-![alt text](https://github.com/carla-garcia-medina/big-data-project/blob/main/screenshots/2.png)
-![alt text](https://github.com/carla-garcia-medina/big-data-project/blob/main/screenshots/3.png)
-![alt text](https://github.com/carla-garcia-medina/big-data-project/blob/main/screenshots/4.png)
-![alt text](https://github.com/carla-garcia-medina/big-data-project/blob/main/screenshots/5.png)
-![alt text](https://github.com/carla-garcia-medina/big-data-project/blob/main/screenshots/6.png)
-![alt text](https://github.com/carla-garcia-medina/big-data-project/blob/main/screenshots/7.png)
-![alt text](https://github.com/carla-garcia-medina/big-data-project/blob/main/screenshots/8.png)
-![alt text](https://github.com/carla-garcia-medina/big-data-project/blob/main/screenshots/9.png)
+   * The describe function was used to obtain statistics about the resulting dataset. <br/>
+*Screenshots for this step can be found in the directory screenshots/final_analytic/*
 
 ### Instructions to Run Code
 1. Place the input files with dataset1 and dataset2 (`cleaning_profiling_dataset1/GHED_data.csv` and ` cleaning_profiling_dataset2/dataset_initial.csv`) onto hdfs:  <br/>
