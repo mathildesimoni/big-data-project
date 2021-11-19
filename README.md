@@ -86,8 +86,17 @@ It was later decided to use PySpark to perform a deeper cleaning and profiling o
     * The name of the "country" column was changed to "countries" so that it would not coincide with the name of the "countries" column in dataset2.
     * The names of some countries were renamed to match the names of countries in dataset2 so that merging the two datasets would be done correctly.
     * The final dataset was output.
-
-    **----------ADD SCREENSHOTS------------**
+![alt text]( https://github.com/carla-garcia-medina/big-data-project/blob/main/cleaning_profiling_dataset1/pyspark_cleaning_and_profiling_scrrenshots/1.jpg)
+![alt text]( https://github.com/carla-garcia-medina/big-data-project/blob/main/cleaning_profiling_dataset1/pyspark_cleaning_and_profiling_scrrenshots/2.jpg)
+![alt text]( https://github.com/carla-garcia-medina/big-data-project/blob/main/cleaning_profiling_dataset1/pyspark_cleaning_and_profiling_scrrenshots/3.jpg)
+![alt text]( https://github.com/carla-garcia-medina/big-data-project/blob/main/cleaning_profiling_dataset1/pyspark_cleaning_and_profiling_scrrenshots/4.jpg)
+![alt text]( https://github.com/carla-garcia-medina/big-data-project/blob/main/cleaning_profiling_dataset1/pyspark_cleaning_and_profiling_scrrenshots/5.jpg)
+![alt text]( https://github.com/carla-garcia-medina/big-data-project/blob/main/cleaning_profiling_dataset1/pyspark_cleaning_and_profiling_scrrenshots/6.jpg)
+![alt text]( https://github.com/carla-garcia-medina/big-data-project/blob/main/cleaning_profiling_dataset1/pyspark_cleaning_and_profiling_scrrenshots/7.jpg)
+![alt text]( https://github.com/carla-garcia-medina/big-data-project/blob/main/cleaning_profiling_dataset1/pyspark_cleaning_and_profiling_scrrenshots/8.jpg)
+![alt text]( https://github.com/carla-garcia-medina/big-data-project/blob/main/cleaning_profiling_dataset1/pyspark_cleaning_and_profiling_scrrenshots/9.jpg)
+![alt text]( https://github.com/carla-garcia-medina/big-data-project/blob/main/cleaning_profiling_dataset1/pyspark_cleaning_and_profiling_scrrenshots/10.jpg)
+![alt text]( https://github.com/carla-garcia-medina/big-data-project/blob/main/cleaning_profiling_dataset1/pyspark_cleaning_and_profiling_scrrenshots/11.jpg)
 
 #### Cleaning and Profiling for dataset2 (coverage)
 * The first part of the cleaning was done using MapReduce (contained in the initial_mapreduce_cleaning directory). <br/>
