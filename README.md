@@ -90,13 +90,8 @@ It was later decided to use PySpark to perform a deeper cleaning and profiling o
 
 #### Cleaning and Profiling for dataset2 (coverage)
 * The first part of the cleaning was done using MapReduce (contained in the initial_mapreduce_cleaning directory). <br/>
-The Clean job was used to clean the data. The file was first filtered to keep the data for the years 2014 to 2018 only. Then, the file was reorganized to contain 8 columns: "country", "year", "Total health care", "Total private", "Primary private", "Duplicate private", "Complementary private", "Supplementary private". The last 6 columns collect percentages of total population for different types of healthcare coverage for 39 country between 2014 and 2018. Finally, a missing value was replaced with the string "NONE".
-![alt text](https://github.com/carla-garcia-medina/big-data-project/blob/main/cleaning_profiling_dataset2/initial_mapreduce_cleaning/screenshots/(1).png)
-![alt text](https://github.com/carla-garcia-medina/big-data-project/blob/main/cleaning_profiling_dataset2/initial_mapreduce_cleaning/screenshots/(2).png)
-![alt text](https://github.com/carla-garcia-medina/big-data-project/blob/main/cleaning_profiling_dataset2/initial_mapreduce_cleaning/screenshots/(3).png)
-![alt text](https://github.com/carla-garcia-medina/big-data-project/blob/main/cleaning_profiling_dataset2/initial_mapreduce_cleaning/screenshots/(4).png)
-![alt text](https://github.com/carla-garcia-medina/big-data-project/blob/main/cleaning_profiling_dataset2/initial_mapreduce_cleaning/screenshots/(5).png)
-![alt text](https://github.com/carla-garcia-medina/big-data-project/blob/main/cleaning_profiling_dataset2/initial_mapreduce_cleaning/screenshots/(6).png)
+The Clean job was used to clean the data. The file was first filtered to keep the data for the years 2014 to 2018 only. Then, the file was reorganized to contain 8 columns: "country", "year", "Total health care", "Total private", "Primary private", "Duplicate private", "Complementary private", "Supplementary private". The last 6 columns collect percentages of total population for different types of healthcare coverage for 39 country between 2014 and 2018. Finally, a missing value was replaced with the string "NONE". <br/>
+*Screenshots for this step can be found in the directory screenshots/etl_cleaning_profiling_dataset2/initial_mapreduce_cleaning/*
 
 * Pyspark was used for the second part of cleaning and for profiling <br/>
 It was later decided to use PySpark to perform profiling and a deeper cleaning of dataset 2.
@@ -118,19 +113,8 @@ It was later decided to use PySpark to perform profiling and a deeper cleaning o
     * All remaining records with NULL values were shown. 
 		* South Africa and Brazil had NULL values for the 5 years so they were dropped from the dataset.
         * Greece, Latvia and Luxembourg had NULL values for some years. Those specific records were dropped (not all the years).
-    * The final dataset was output.
-    
-![alt text](https://github.com/carla-garcia-medina/big-data-project/blob/main/cleaning_profiling_dataset2/screenshots/(1).png)
-![alt text](https://github.com/carla-garcia-medina/big-data-project/blob/main/cleaning_profiling_dataset2/screenshots/(2).png)
-![alt text](https://github.com/carla-garcia-medina/big-data-project/blob/main/cleaning_profiling_dataset2/screenshots/(3).png)
-![alt text](https://github.com/carla-garcia-medina/big-data-project/blob/main/cleaning_profiling_dataset2/screenshots/(4).png)
-![alt text](https://github.com/carla-garcia-medina/big-data-project/blob/main/cleaning_profiling_dataset2/screenshots/(5).png)
-![alt text](https://github.com/carla-garcia-medina/big-data-project/blob/main/cleaning_profiling_dataset2/screenshots/(6).png)
-![alt text](https://github.com/carla-garcia-medina/big-data-project/blob/main/cleaning_profiling_dataset2/screenshots/(7).png)
-![alt text](https://github.com/carla-garcia-medina/big-data-project/blob/main/cleaning_profiling_dataset2/screenshots/(8).png)
-![alt text](https://github.com/carla-garcia-medina/big-data-project/blob/main/cleaning_profiling_dataset2/screenshots/(9).png)
-![alt text](https://github.com/carla-garcia-medina/big-data-project/blob/main/cleaning_profiling_dataset2/screenshots/(10).png)
-![alt text](https://github.com/carla-garcia-medina/big-data-project/blob/main/cleaning_profiling_dataset2/screenshots/(11).png)
+    * The final dataset was output. <br/>
+*Screenshots for this step can be found in the directory screenshots/etl_cleaning_profiling_dataset2/pyspark_cleaning_and_profiling/*
 
 #### Merging and First correlation
 * It was decided to merge the 2 dataframes `governmental_coverage_df` and `expenses_df` and calculate a correlation for each year between 2014 and 2018.
