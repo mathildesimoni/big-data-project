@@ -130,8 +130,8 @@ It was later decided to use PySpark to perform profiling and a deeper cleaning o
    * Finally, the corellation was calculated using the pyspark corr function.
    * The describe function was used to obtain statistics about the resulting dataset.
 
-![alt text](https://github.com/carla-garcia-medina/big-data-project/blob/29c1ade5637d0fac59a5573fb948bbbf279e5112/screenshots/1.jpg)
-![alt text](https://github.com/carla-garcia-medina/big-data-project/blob/29c1ade5637d0fac59a5573fb948bbbf279e5112/screenshots/2.jpg)
+![alt text](https://github.com/carla-garcia-medina/big-data-project/blob/073c0a20bed0ebb90038a82d6875cea09f86585d/screenshots/1.jpg)
+![alt text](https://github.com/carla-garcia-medina/big-data-project/blob/main/screenshots/2.jpg)
 ![alt text](https://github.com/carla-garcia-medina/big-data-project/blob/29c1ade5637d0fac59a5573fb948bbbf279e5112/screenshots/3.jpg)
 ![alt text](https://github.com/carla-garcia-medina/big-data-project/blob/29c1ade5637d0fac59a5573fb948bbbf279e5112/screenshots/4.jpg)
 ![alt text](https://github.com/carla-garcia-medina/big-data-project/blob/29c1ade5637d0fac59a5573fb948bbbf279e5112/screenshots/5.jpg)
