@@ -121,7 +121,17 @@ It was later decided to use PySpark to perform profiling and a deeper cleaning o
         * Greece, Latvia and Luxembourg had NULL values for some years. Those specific records were dropped (not all the years).
     * The final dataset was output.
     
-    **----------ADD SCREENSHOTS------------**
+![alt text](https://github.com/carla-garcia-medina/big-data-project/blob/main/cleaning_profiling_dataset2/screenshots/(1).png)
+![alt text](https://github.com/carla-garcia-medina/big-data-project/blob/main/cleaning_profiling_dataset2/screenshots/(2).png)
+![alt text](https://github.com/carla-garcia-medina/big-data-project/blob/main/cleaning_profiling_dataset2/screenshots/(3).png)
+![alt text](https://github.com/carla-garcia-medina/big-data-project/blob/main/cleaning_profiling_dataset2/screenshots/(4).png)
+![alt text](https://github.com/carla-garcia-medina/big-data-project/blob/main/cleaning_profiling_dataset2/screenshots/(5).png)
+![alt text](https://github.com/carla-garcia-medina/big-data-project/blob/main/cleaning_profiling_dataset2/screenshots/(6).png)
+![alt text](https://github.com/carla-garcia-medina/big-data-project/blob/main/cleaning_profiling_dataset2/screenshots/(7).png)
+![alt text](https://github.com/carla-garcia-medina/big-data-project/blob/main/cleaning_profiling_dataset2/screenshots/(8).png)
+![alt text](https://github.com/carla-garcia-medina/big-data-project/blob/main/cleaning_profiling_dataset2/screenshots/(9).png)
+![alt text](https://github.com/carla-garcia-medina/big-data-project/blob/main/cleaning_profiling_dataset2/screenshots/(10).png)
+![alt text](https://github.com/carla-garcia-medina/big-data-project/blob/main/cleaning_profiling_dataset2/screenshots/(11).png)
 
 #### Merging and First correlation
 * It was decided to merge the 2 dataframes `governmental_coverage_df` and `expenses_df` and calculate a correlation for each year between 2014 and 2018.
@@ -130,7 +140,7 @@ It was later decided to use PySpark to perform profiling and a deeper cleaning o
    * Finally, the corellation was calculated using the pyspark corr function.
    * The describe function was used to obtain statistics about the resulting dataset.
 
-![alt text](https://github.com/carla-garcia-medina/big-data-project/blob/073c0a20bed0ebb90038a82d6875cea09f86585d/screenshots/1.jpg)
+![alt text](https://github.com/carla-garcia-medina/big-data-project/blob/main/screenshots/1.jpg)
 ![alt text](https://github.com/carla-garcia-medina/big-data-project/blob/main/screenshots/2.jpg)
 ![alt text](https://github.com/carla-garcia-medina/big-data-project/blob/main/screenshots/3.jpg)
 ![alt text](https://github.com/carla-garcia-medina/big-data-project/blob/main/screenshots/4.jpg)
