@@ -46,7 +46,7 @@ This application aims to find the correlation between the type of health care sy
    * dataset_initial.csv : *copy of dataset2 containing information about percentages of population for different types of healthcare coverage by country and year* 
    * coverage_data_cleaning_and_profiling.py : *final pyspark script to clean and profile dataset2*
 * README.md : *this file*
-* joined_datasets_analytics.py : **----------TO-DO------------**
+* joined_datasets_analytics.py : *final pyspark script for merging and correlation between the 2 datasets*
 
 ### Analytics steps
 
