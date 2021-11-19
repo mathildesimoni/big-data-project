@@ -169,8 +169,8 @@ For example:<br/>
 
 ### Troubleshooting
 
-A *UnicodeEncodeError* may appear when copy-pasting the python script in pyspark. In that case, try running the commands
-`import sys`
-`import codecs`
-`sys.stdout = codecs.getwriter('utf8')(sys.stdout)`
+A *UnicodeEncodeError* may appear when copy-pasting the python scripts in pyspark. In that case, try running the following commands: <br/>
+`import sys` <br/>
+`import codecs` <br/>
+`sys.stdout = codecs.getwriter('utf8')(sys.stdout)` <br/>
 
