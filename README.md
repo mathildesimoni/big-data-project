@@ -64,14 +64,9 @@ This application aims to find the correlation between the type of health care sy
   The CountRecs job was first used to count the number of records in the original dataset1. The number of rows output was 3648. 
   2. Initial Cleaning <br/>
   The Clean job was then used to clean the data. All columns except for country and che_pc_usd were removed. Additionally, records with missing values in the che_pc_usd field were dropped. Only the values with information for the year 2018 were kept since this was the initial year of interest for the analytic.
-  ![alt text](https://github.com/carla-garcia-medina/big-data-project/blob/main/cleaning_profiling_dataset1/initial_mapreduce_cleaning/screenshots/pasted%20image%200%20(4).png)
-  ![alt text](https://github.com/carla-garcia-medina/big-data-project/blob/main/cleaning_profiling_dataset1/initial_mapreduce_cleaning/screenshots/pasted%20image%200%20(5).png)
-  ![alt text](https://github.com/carla-garcia-medina/big-data-project/blob/main/cleaning_profiling_dataset1/initial_mapreduce_cleaning/screenshots/pasted%20image%200%20(6).png)
-  ![alt text](https://github.com/carla-garcia-medina/big-data-project/blob/main/cleaning_profiling_dataset1/initial_mapreduce_cleaning/screenshots/pasted%20image%200%20(7).png)
   3. Final Profiling <br/>
   Running the CountRecs on the cleaned dataset (output in file with name part-r-00000), the number of rows output was 188. The new number of rows did not match the original one. The main reasons for this difference is that only rows with a year value of “2018” were selected since this was the initial year of interest for the analysis. Given that the data contained years from 2000 to 2018 inclusive, this resulted in a drastic reduction in the number of rows. Additionally, a few records had missing values for the che_pc_usd column. These records were removed since they were sparse and the countries in the dataset are extremely different to one another, such that imputing values could result in bias.
-  ![alt text](https://github.com/carla-garcia-medina/big-data-project/blob/main/cleaning_profiling_dataset1/initial_mapreduce_cleaning/screenshots/pasted%20image%200%20(8).png)
-  ![alt text](https://github.com/carla-garcia-medina/big-data-project/blob/main/cleaning_profiling_dataset1/initial_mapreduce_cleaning/screenshots/pasted%20image%200%20(9).png)
+  *screenshots for this step can be found in the directory screenshots/etl_cleaning_profiling_dataset1/mapreduce_cleaning_and_profiling/*
   
 * Deeper Cleaning and Profiling with Pyspark <br/>
 It was later decided to use PySpark to perform a deeper cleaning and profiling of dataset 1.
@@ -91,6 +86,7 @@ It was later decided to use PySpark to perform a deeper cleaning and profiling o
     * The name of the "country" column was changed to "countries" so that it would not coincide with the name of the "countries" column in dataset2.
     * The names of some countries were renamed to match the names of countries in dataset2 so that merging the two datasets would be done correctly.
     * The final dataset was output.
+ *screenshots for this step can be found in the directory screenshots/etl_cleaning_profiling_dataset1/mapreduce_cleaning_and_profiling/*
 ![alt text]( https://github.com/carla-garcia-medina/big-data-project/blob/main/cleaning_profiling_dataset1/pyspark_cleaning_and_profiling_scrrenshots/1.jpg)
 ![alt text]( https://github.com/carla-garcia-medina/big-data-project/blob/main/cleaning_profiling_dataset1/pyspark_cleaning_and_profiling_scrrenshots/2.jpg)
 ![alt text]( https://github.com/carla-garcia-medina/big-data-project/blob/main/cleaning_profiling_dataset1/pyspark_cleaning_and_profiling_scrrenshots/3.jpg)
