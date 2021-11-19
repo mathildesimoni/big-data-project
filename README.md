@@ -54,7 +54,7 @@ This application aims to find the correlation between the type of health care sy
 		* pyspark_cleaning_and_profiling/: *pyspark screenshots for dataset2*
 	* final_analytic/ : *screenshots for merged dataset*
 * README.md : *this file*
-* joined_datasets_analytics.py : *final pyspark script for merging and correlation between the 2 datasets*
+* joined_datasets_analytics.py : *final pyspark script for merging, statistics and correlation between the 2 datasets*
 
 ### Analytics steps
 
