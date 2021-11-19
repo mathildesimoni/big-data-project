@@ -140,11 +140,15 @@ It was later decided to use PySpark to perform profiling and a deeper cleaning o
    * Finally, the corellation was calculated using the pyspark corr function.
    * The describe function was used to obtain statistics about the resulting dataset.
 
-![alt text](https://github.com/carla-garcia-medina/big-data-project/blob/main/screenshots/1.jpg)
-![alt text](https://github.com/carla-garcia-medina/big-data-project/blob/main/screenshots/2.jpg)
-![alt text](https://github.com/carla-garcia-medina/big-data-project/blob/main/screenshots/3.jpg)
-![alt text](https://github.com/carla-garcia-medina/big-data-project/blob/main/screenshots/4.jpg)
-![alt text](https://github.com/carla-garcia-medina/big-data-project/blob/main/screenshots/5.jpg)
+![alt text](https://github.com/carla-garcia-medina/big-data-project/blob/main/screenshots/1.png)
+![alt text](https://github.com/carla-garcia-medina/big-data-project/blob/main/screenshots/2.png)
+![alt text](https://github.com/carla-garcia-medina/big-data-project/blob/main/screenshots/3.png)
+![alt text](https://github.com/carla-garcia-medina/big-data-project/blob/main/screenshots/4.png)
+![alt text](https://github.com/carla-garcia-medina/big-data-project/blob/main/screenshots/5.png)
+![alt text](https://github.com/carla-garcia-medina/big-data-project/blob/main/screenshots/6.png)
+![alt text](https://github.com/carla-garcia-medina/big-data-project/blob/main/screenshots/7.png)
+![alt text](https://github.com/carla-garcia-medina/big-data-project/blob/main/screenshots/8.png)
+![alt text](https://github.com/carla-garcia-medina/big-data-project/blob/main/screenshots/9.png)
 
 ### Instructions to Run Code
 1. Place the input files with dataset1 and dataset2 (`cleaning_profiling_dataset1/GHED_data.csv` and ` cleaning_profiling_dataset2/dataset_initial.csv`) onto hdfs:  <br/>
