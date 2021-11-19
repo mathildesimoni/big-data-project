@@ -124,8 +124,17 @@ It was later decided to use PySpark to perform profiling and a deeper cleaning o
     **----------ADD SCREENSHOTS------------**
 
 #### Merging and First correlation
-* **----------TO-DO------------**
-* **----------TO-DO------------**
+* It was decided to merge the 2 dataframes `governmental_coverage_df` and `expenses_df` and calculate a correlation for each year between 2014 and 2018.
+   * First, the 2 dataframes were filtered to only keep data for the year being analyzed.
+   * Then, they were merged in a new dataframe `df` using the pyspark inner join function based on the country name.
+   * Finally, the corellation was calculated using the pyspark corr function.
+   * The describe function was used to obtain statistics about the resulting dataset.
+
+![alt text](https://github.com/carla-garcia-medina/big-data-project/blob/29c1ade5637d0fac59a5573fb948bbbf279e5112/screenshots/1.jpg)
+![alt text](https://github.com/carla-garcia-medina/big-data-project/blob/29c1ade5637d0fac59a5573fb948bbbf279e5112/screenshots/2.jpg)
+![alt text](https://github.com/carla-garcia-medina/big-data-project/blob/29c1ade5637d0fac59a5573fb948bbbf279e5112/screenshots/3.jpg)
+![alt text](https://github.com/carla-garcia-medina/big-data-project/blob/29c1ade5637d0fac59a5573fb948bbbf279e5112/screenshots/4.jpg)
+![alt text](https://github.com/carla-garcia-medina/big-data-project/blob/29c1ade5637d0fac59a5573fb948bbbf279e5112/screenshots/5.jpg)
 
 ### Instructions to Run Code
 1. Place the input files with dataset1 and dataset2 (`cleaning_profiling_dataset1/GHED_data.csv` and ` cleaning_profiling_dataset2/dataset_initial.csv`) onto hdfs:  <br/>
