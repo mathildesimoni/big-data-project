@@ -86,7 +86,7 @@ It was later decided to use PySpark to perform a deeper cleaning and profiling o
     * The name of the "country" column was changed to "countries" so that it would not coincide with the name of the "countries" column in dataset2.
     * The names of some countries were renamed to match the names of countries in dataset2 so that merging the two datasets would be done correctly.
     * The final dataset was output. <br/>
- *Screenshots for this step can be found in the directory screenshots/etl_cleaning_profiling_dataset1/pyspark_cleaning_and_profiling/*
+*Screenshots for this step can be found in the directory screenshots/etl_cleaning_profiling_dataset1/pyspark_cleaning_and_profiling/*
 
 #### Cleaning and Profiling for dataset2 (coverage)
 * The first part of the cleaning was done using MapReduce (contained in the initial_mapreduce_cleaning directory). <br/>
