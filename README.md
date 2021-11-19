@@ -167,4 +167,10 @@ For example:<br/>
 8. Copy and paste commands from `cleaning_profiling_dataset2/coverage_data_cleaning_and_profiling.py` to clean and profile datset2 into the interactive Shell.
 9. Copy and paste commands from `joined_datasets_analytics` to merge the two datasets and compute the merged analytics.
 
+### Troubleshooting
+
+A *UnicodeEncodeError* may appear when copy-pasting the python script in pyspark. In that case, try running the commands
+`import sys`
+`import codecs`
+`sys.stdout = codecs.getwriter('utf8')(sys.stdout)`
 
