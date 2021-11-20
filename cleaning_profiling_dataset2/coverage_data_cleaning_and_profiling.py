@@ -4,9 +4,8 @@ from pyspark.sql.functions import *
 from pyspark.sql import SparkSession
 from pyspark.sql.functions import col
 
-# define directory path
-path = "project/code_drop1/dataset_cleaned1.csv"
-# path = "hw8/dataset_cleaned1.csv"
+# define directory path (we have used different paths for the screenshots. This path is for the graders to try the code. Access to this directory was shared)
+path = "/user/mps565/big-data-project/dataset_cleaned1.csv"
 
 # convert data source to spark dataframe
 coverage_df = sqlContext.read.csv(path) 

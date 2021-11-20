@@ -4,9 +4,8 @@ from pyspark.sql.types import StructType, StructField, StringType, FloatType, In
 from pyspark.sql import SparkSession
 from pyspark.sql.functions import col
 
-# create path to input file
-#path = "project/code_drop1/GHED_data.csv"
-path = "/user/cgm396/hw8/GHED_data.csv"
+# define directory path (we have used different paths for the screenshots. This path is for the graders to try the code. Access to this directory was shared)
+path = "/user/mps565/big-data-project/GHED_data.csv"
 
 # convert data source to spark dataframe
 expenses_df = sqlContext.read.option("header", True).csv(path)
