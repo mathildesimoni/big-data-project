@@ -143,8 +143,14 @@ It was later decided to use PySpark to perform profiling and a deeper cleaning o
 `module load python/gcc/3.7.9`  <br/>
 `pyspark --deploy-mode client`
 4. Copy and paste commands from `cleaning_profiling_dataset1/expenses_data_cleaning_and_profiling.py` to clean and profile dataset1 into the interactive Shell.
-5. Copy and paste commands from `cleaning_profiling_dataset2/coverage_data_cleaning_and_profiling.py` to clean and profile datset2 into the interactive Shell.
-6. Copy and paste commands from `joined_datasets_analytics` to merge the two datasets and compute the merged analytics.
+5. In the python file `cleaning_profiling_dataset2/coverage_data_cleaning_and_profiling.py`, edit the variable path to correspond to the path where you stored the result of the initial mapreduce job (from step 2) in hdfs: <br/> 
+ For example:<br/>
+ `# create path to input file` <br/>
+ `#path = "project/code_drop1/result.csv"` <br/>
+ `path = "/user/cgm396/hw8/result.csv"` <br/>
+ For convenience, the result of the mapreduce job has also been added to the shared directory. If you did not run the mapreduce job, do not changed the variable path. 
+6. Copy and paste commands from `cleaning_profiling_dataset2/coverage_data_cleaning_and_profiling.py` to clean and profile datset2 into the interactive Shell.
+7. Copy and paste commands from `joined_datasets_analytics` to merge the two datasets and compute the merged analytics.
 
 ### Troubleshooting
 
