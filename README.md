@@ -53,10 +53,19 @@ This application aims to find the correlation between the type of health care sy
 		* initial_mapreduce_cleaning/ : *mapreduce screenshots for dataset2*
 		* pyspark_cleaning_and_profiling/: *pyspark screenshots for dataset2*
 	* final_analytic/ : *screenshots for merged dataset*
+    * data_ingestion/ : *screenshots for data ingestion*
+* analytics/
+    * joined_datasets_analytics.py : *final pyspark script for merging, statistics and correlation between the 2 datasets*
+* data_ingestion/
+    * data_ingestion : *file containing data ingestion commands*
 * README.md : *this file*
-* joined_datasets_analytics.py : *final pyspark script for merging, statistics and correlation between the 2 datasets*
 
 ### Analytics steps
+
+#### Data Ingestion
+* The 2 initial datasets *GHED_data.csv* and *dataset_initial.csv* were added on Peel with the scp command
+* Then, then they were added in the big-data-project directory in HDFS
+* Finally access was shared with graders and teammates
 
 #### Cleaning and Profiling for dataset1 (health expenditure)
 * An initial profiling cleaning was done with two MapReduce jobs (contained in the initial_mapreduce_cleaning directory). 
