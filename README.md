@@ -131,7 +131,7 @@ It was later decided to use PySpark to perform profiling and a deeper cleaning o
 2. Compile and run the MapReduce job in `cleaning_profiling_dataset2/initial_mapreduce_cleaning/` to make an initial clean of dataset2.<br/>
 `hadoop jar clean.jar Clean <path to dataset2 in hdfs> <path to result from step 2>`
 3. Connect to python Spark interactive Shell: <br/>
-`module load python/gcc/3.7.9`
+`module load python/gcc/3.7.9`  <br/>
 `pyspark --deploy-mode client`
 5. In the python file `cleaning_profiling_dataset1/expenses_data_cleaning_and_profiling.py`, edit the variable path to correspond to the path where you stored dataset1 in hdfs: <br/> 
 For example:<br/>
