@@ -78,7 +78,7 @@ This application aims to find the correlation between the type of health care sy
 *Screenshots for this step can be found in the directory screenshots/etl_cleaning_profiling_dataset1/mapreduce_cleaning_and_profiling/*
   
 * Deeper Cleaning and Profiling with Pyspark <br/>
-It was later decided to use PySpark to perform a deeper cleaning and profiling of dataset 1.
+It was later decided to use PySpark to perform a deeper cleaning and profiling of dataset 1. (no use of the mapreduce job in the final product)
   1. Profiling 
     * The original dataset is used to calculate the covariance between Current Health Expenditure per Capita in US and subtypes of this expenditure including domestic general, domestic private, out-of-pocket, and primary health care.
     * Descriptive statistics of these columns was obtained including the counts, means, standard deviations, minimum values, and maximum values.
@@ -134,27 +134,17 @@ It was later decided to use PySpark to perform profiling and a deeper cleaning o
 *Screenshots for this step can be found in the directory screenshots/final_analytic/*
 
 ### Instructions to Run Code
-1. Place the input files with dataset1 and dataset2 (`cleaning_profiling_dataset1/GHED_data.csv` and ` cleaning_profiling_dataset2/dataset_initial.csv`) onto hdfs:  <br/>
-`hdfs dfs -put <path to dataset1 in peel> <path to dataset1 in hdfs>` <br/>
-`hdfs dfs -put <path to dataset2 in peel> <path to dataset2 in hdfs>`
-2. Compile and run the MapReduce job in `cleaning_profiling_dataset2/initial_mapreduce_cleaning/` to make an initial clean of dataset2.<br/>
-`hadoop jar clean.jar Clean <path to dataset2 in hdfs> <path to result from step 2>`
+
+1. On your local computer, place the *clean.jar* file (you can find it in the directory *cleaning_profiling_dataset2/initial_mapreduce_cleaning/clean.jar* ) in Peel: <br/>
+`scp <path to clean.jar on local computer> <path to clean.jar on Peel>
+2. On Peel, run the MapReduce job in *cleaning_profiling_dataset2/initial_mapreduce_cleaning/* to make an initial clean of dataset2. The directory with the input file in HDFS has been shared with the graders. You must choose a directory to output the result. <br/>
+`hadoop jar clean.jar Clean </user/mps565/big-data-project/dataset_initial.csv <path to result from step 2>`
 3. Connect to python Spark interactive Shell: <br/>
 `module load python/gcc/3.7.9`  <br/>
 `pyspark --deploy-mode client`
-5. In the python file `cleaning_profiling_dataset1/expenses_data_cleaning_and_profiling.py`, edit the variable path to correspond to the path where you stored dataset1 in hdfs: <br/> 
-For example:<br/>
-`# create path to input file` <br/>
-`#path = "project/code_drop1/GHED_data.csv"` <br/>
-`path = "/user/cgm396/hw8/GHED_data.csv"` <br/>
-5. Copy and paste commands from `cleaning_profiling_dataset1/expenses_data_cleaning_and_profiling.py` to clean and profile dataset1 into the interactive Shell.
-6. In the python file `cleaning_profiling_dataset2/coverage_data_cleaning_and_profiling.py`, edit the variable path to correspond to the path where you stored the result of the initial mapreduce job (from step 2) in hdfs: <br/> 
-For example:<br/>
-`# create path to input file` <br/>
-`#path = "project/code_drop1/result.csv"` <br/>
-`path = "/user/cgm396/hw8/result.csv"` <br/>
-8. Copy and paste commands from `cleaning_profiling_dataset2/coverage_data_cleaning_and_profiling.py` to clean and profile datset2 into the interactive Shell.
-9. Copy and paste commands from `joined_datasets_analytics` to merge the two datasets and compute the merged analytics.
+4. Copy and paste commands from `cleaning_profiling_dataset1/expenses_data_cleaning_and_profiling.py` to clean and profile dataset1 into the interactive Shell.
+5. Copy and paste commands from `cleaning_profiling_dataset2/coverage_data_cleaning_and_profiling.py` to clean and profile datset2 into the interactive Shell.
+6. Copy and paste commands from `joined_datasets_analytics` to merge the two datasets and compute the merged analytics.
 
 ### Troubleshooting
 
