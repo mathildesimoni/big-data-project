@@ -149,7 +149,7 @@ It was later decided to use PySpark to perform profiling and a deeper cleaning o
  `#path = "project/code_drop1/result.csv"` <br/>
  `path = "/user/cgm396/hw8/result.csv"` <br/>
  *For convenience, the result of the mapreduce job has also been added to the shared directory. If you did not run the mapreduce job, do not change the variable path.* 
-6. Copy and paste commands from `cleaning_profiling_dataset2/coverage_data_cleaning_and_profiling.py` to clean and profile datset2 into the interactive Shell.
+6. Copy and paste commands from `cleaning_profiling_dataset2/coverage_data_cleaning_and_profiling.py` to clean and profile dataset2 into the interactive Shell.
 7. Copy and paste commands from `joined_datasets_analytics` to merge the two datasets and compute the merged analytics.
 
 ### Troubleshooting
