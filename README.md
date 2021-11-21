@@ -48,10 +48,10 @@ The format used for this directory is different to that specified in the assignm
    * coverage_data_cleaning_and_profiling.py : *final pyspark script to clean and profile dataset2*
 * screenshots/
 	* etl_cleaning_profiling_dataset1/ : *screenshots for dataset1*
-		* mapreduce_cleaning_and_profiling/ : *mapreduce screenshots for dataset1*
+		* mapreduce_cleaning_and_profiling/ : *MapReduce screenshots for dataset1*
 		* pyspark_cleaning_and_profiling/: *pyspark screenshots for dataset1*
 	* etl_cleaning_profiling_dataset2/ : *screenshots for dataset2*
-		* initial_mapreduce_cleaning/ : *mapreduce screenshots for dataset2*
+		* initial_mapreduce_cleaning/ : *MapReduce screenshots for dataset2*
 		* pyspark_cleaning_and_profiling/: *pyspark screenshots for dataset2*
 	* final_analytic/ : *screenshots for merged dataset*
     * data_ingestion/ : *screenshots for data ingestion*
