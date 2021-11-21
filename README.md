@@ -140,7 +140,7 @@ It was later decided to use PySpark to perform profiling and a deeper cleaning o
 `scp <path to clean.jar on local computer> <path to clean.jar on Peel>`
 2. Log-in to Peel and run the MapReduce job in *cleaning_profiling_dataset2/initial_mapreduce_cleaning/* to make an initial clean of dataset2. The directory with the input file in HDFS has been shared with the graders. You must choose a directory to output the result. <br/>
 `yarn jar` <br/>
-`hadoop jar clean.jar Clean </user/mps565/big-data-project/dataset_initial.csv <path to result>`
+`hadoop jar clean.jar Clean /user/mps565/big-data-project/dataset_initial.csv <path to result>`
 3. Connect to python Spark interactive Shell: <br/>
 `module load python/gcc/3.7.9`  <br/>
 `pyspark --deploy-mode client`
