@@ -155,6 +155,29 @@ It was later decided to use PySpark to perform profiling and a deeper cleaning o
 
 ### Troubleshooting
 
+If permission errors appear when opening the files, follow the instructions below:
+1. Place the input files with dataset1 and dataset2 (`cleaning_profiling_dataset1/GHED_data.csv` and ` cleaning_profiling_dataset2/dataset_initial.csv`) onto hdfs:  <br/>
+`hdfs dfs -put <path to dataset1 in peel> <path to dataset1 in hdfs>` <br/>
+`hdfs dfs -put <path to dataset2 in peel> <path to dataset2 in hdfs>`
+2. Compile and run the MapReduce job in `cleaning_profiling_dataset2/initial_mapreduce_cleaning/` to make an initial clean of dataset2.<br/>
+`hadoop jar clean.jar Clean <path to dataset2 in hdfs> <path to output>`
+3. Connect to python Spark interactive Shell: <br/>
+`module load python/gcc/3.7.9`
+`pyspark --deploy-mode client`
+5. In the python file `cleaning_profiling_dataset1/expenses_data_cleaning_and_profiling.py`, edit the variable path to correspond to the path where you stored dataset1 in hdfs: <br/> 
+For example:<br/>
+`# create path to input file` <br/>
+`#path = "project/code_drop1/GHED_data.csv"` <br/>
+`path = "/user/cgm396/hw8/GHED_data.csv"` <br/>
+5. Copy and paste commands from `cleaning_profiling_dataset1/expenses_data_cleaning_and_profiling.py` to clean and profile dataset1 into the interactive Shell.
+6. In the python file `cleaning_profiling_dataset2/coverage_data_cleaning_and_profiling.py`, edit the variable path to correspond to the path where you stored the result of the initial mapreduce job (from step 2) in hdfs: <br/> 
+For example:<br/>
+`# create path to input file` <br/>
+`#path = "project/code_drop1/result.csv"` <br/>
+`path = "/user/cgm396/hw8/result.csv"` <br/>
+8. Copy and paste commands from `cleaning_profiling_dataset2/coverage_data_cleaning_and_profiling.py` to clean and profile datset2 into the interactive Shell.
+9. Copy and paste commands from `joined_datasets_analytics` to merge the two datasets and compute the merged analytics.
+
 A *UnicodeEncodeError* may appear when copy-pasting the python scripts in pyspark. In that case, try running the following commands: <br/>
 `import sys` <br/>
 `import codecs` <br/>
