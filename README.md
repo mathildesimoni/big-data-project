@@ -155,6 +155,11 @@ It was later decided to use PySpark to perform profiling and a deeper cleaning o
 
 ### Troubleshooting
 
+A *UnicodeEncodeError* may appear when copy-pasting the python scripts in pyspark. In that case, try running the following commands: <br/>
+`import sys` <br/>
+`import codecs` <br/>
+`sys.stdout = codecs.getwriter('utf8')(sys.stdout)` <br/>
+
 If permission errors appear when opening the files, follow the instructions below:
 1. Place the *clean.jar* file and the 2 initial datasets *GHED_data.csv* and *dataset_initial.csv* on Peel: <br/>
 	* *clean.jar* can be found in the directory cleaning_profiling_dataset2/initial_mapreduce_cleaning/
@@ -183,9 +188,3 @@ For example:<br/>
 `# path = ` <br/>
 8. Copy and paste commands from `cleaning_profiling_dataset2/coverage_data_cleaning_and_profiling.py` to clean and profile datset2 into the interactive Shell.
 9. Copy and paste commands from `joined_datasets_analytics` to merge the two datasets and compute the merged analytics.
-
-A *UnicodeEncodeError* may appear when copy-pasting the python scripts in pyspark. In that case, try running the following commands: <br/>
-`import sys` <br/>
-`import codecs` <br/>
-`sys.stdout = codecs.getwriter('utf8')(sys.stdout)` <br/>
-
