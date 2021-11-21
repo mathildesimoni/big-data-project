@@ -158,8 +158,8 @@ It was later decided to use PySpark to perform profiling and a deeper cleaning o
 If permission errors appear when opening the files, follow the instructions below:
 1. Place the *clean.jar* file and the 2 initial datasets *GHED_data.csv* and *dataset_initial.csv* on Peel: <br/>
 	* *clean.jar* can be found in the directory cleaning_profiling_dataset2/initial_mapreduce_cleaning/
-	* *GHED_data.csv* can be found in the directory cleaning_profiling_dataset1/GHED_data.csv
-	* *dataset_initial.csv* can be found in the directory cleaning_profiling_dataset2/dataset_initial.csv <br/>
+	* *GHED_data.csv* can be found in the directory cleaning_profiling_dataset1/
+	* *dataset_initial.csv* can be found in the directory cleaning_profiling_dataset2/ <br/>
 `scp <path to clean.jar on local computer> <path to clean.jar on Peel>` <br/>
 `scp <path to GHED_data.csv on local computer> <path to GHED_data.csv on Peel>` <br/>
 `scp <path to dataset_initial.csv on local computer> <path to dataset_initial.csv on Peel>` <br/>
