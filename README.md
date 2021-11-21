@@ -174,9 +174,8 @@ If permission errors appear when opening the files, follow the instructions belo
 `pyspark --deploy-mode client`
 5. In the python file `cleaning_profiling_dataset1/expenses_data_cleaning_and_profiling.py`, edit the variable path to correspond to the path where you stored dataset1 (*GHED_data.csv*) in hdfs: <br/> 
 For example:<br/>
-`# create path to input file` <br/>
-`#path = "project/code_drop1/GHED_data.csv"` <br/>
-`path = "/user/cgm396/hw8/GHED_data.csv"` <br/>
+`path = "/user/mps565/big-data-project/GHED_data.csv"` <br/>
+`# path = `
 6. Copy and paste commands from `cleaning_profiling_dataset1/expenses_data_cleaning_and_profiling.py` to clean and profile dataset1 into the interactive Shell.
 7. In the python file `cleaning_profiling_dataset2/coverage_data_cleaning_and_profiling.py`, edit the variable path to correspond to the path where you stored the result of the initial mapreduce job (from step 2) in hdfs: <br/> 
 For example:<br/>
