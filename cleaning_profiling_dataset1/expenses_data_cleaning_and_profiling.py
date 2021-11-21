@@ -6,6 +6,7 @@ from pyspark.sql.functions import col
 
 # define directory path (we have used different paths for the screenshots. This path is for the graders to try the code. Access to this directory was shared)
 path = "/user/mps565/big-data-project/GHED_data.csv"
+# path = 
 
 # convert data source to spark dataframe
 expenses_df = sqlContext.read.option("header", True).csv(path)
