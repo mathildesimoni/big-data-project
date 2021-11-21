@@ -137,7 +137,7 @@ It was later decided to use PySpark to perform profiling and a deeper cleaning o
 ### Instructions to Run Code
 
 1. Place the *clean.jar* file on Peel (you can find it in the directory *cleaning_profiling_dataset2/initial_mapreduce_cleaning/clean.jar* ): <br/>
-`scp <path to *clean.jar* on local computer> <path to clean.jar on Peel>`
+`scp <path to clean.jar on local computer> <path to clean.jar on Peel>`
 2. Log-in to Peel and run the MapReduce job in *cleaning_profiling_dataset2/initial_mapreduce_cleaning/* to make an initial clean of dataset2. The directory with the input file in HDFS has been shared with the graders. You must choose a directory to output the result. <br/>
 `yarn jar`
 `hadoop jar clean.jar Clean </user/mps565/big-data-project/dataset_initial.csv <path to result from step 2>`
@@ -159,10 +159,10 @@ If permission errors appear when opening the files, follow the instructions belo
 1. Place the *clean.jar* file and the 2 initial datasets *GHED_data.csv* and *dataset_initial.csv* on Peel <br/>
 	* *clean.jar* can be found in the directory cleaning_profiling_dataset2/initial_mapreduce_cleaning/
 	* *GHED_data.csv* can be found in the directory cleaning_profiling_dataset1/GHED_data.csv
-	* *dataset_initial.csv* can be found in the directory cleaning_profiling_dataset2/dataset_initial.csv 
-`scp <path to *clean.jar* on local computer> <path to *clean.jar* on Peel>`
-`scp <path to *GHED_data.csv* on local computer> <path to *GHED_data.csv* on Peel>`
-`scp <path to *dataset_initial.csv* on local computer> <path to *dataset_initial.csv* on Peel>`
+	* *dataset_initial.csv* can be found in the directory cleaning_profiling_dataset2/dataset_initial.csv <br/>
+`scp <path to clean.jar on local computer> <path to clean.jar on Peel>` <br/>
+`scp <path to GHED_data.csv on local computer> <path to GHED_data.csv on Peel>` <br/>
+`scp <path to dataset_initial.csv on local computer> <path to dataset_initial.csv on Peel>` <br/>
 2. Place the input files with dataset1 and dataset2 (`cleaning_profiling_dataset1/GHED_data.csv` and ` cleaning_profiling_dataset2/dataset_initial.csv`) onto hdfs:  <br/>
 `hdfs dfs -put <path to dataset1 in peel> <path to dataset1 in hdfs>` <br/>
 `hdfs dfs -put <path to dataset2 in peel> <path to dataset2 in hdfs>`
