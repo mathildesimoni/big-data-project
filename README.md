@@ -180,7 +180,6 @@ For example:<br/>
 6. Copy and paste commands from `cleaning_profiling_dataset1/expenses_data_cleaning_and_profiling.py` to clean and profile dataset1 into the interactive Shell.
 7. In the python file `cleaning_profiling_dataset2/coverage_data_cleaning_and_profiling.py`, edit the variable path to correspond to the path where you stored the result of the initial mapreduce job (from step 2) in hdfs: <br/> 
 For example:<br/>
-`# create path to input file` <br/>
 `path = "/user/mps565/big-data-project/dataset_cleaned1.csv"`<br/>
 `# path = ` <br/>
 8. Copy and paste commands from `cleaning_profiling_dataset2/coverage_data_cleaning_and_profiling.py` to clean and profile datset2 into the interactive Shell.
