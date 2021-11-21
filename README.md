@@ -137,7 +137,7 @@ It was later decided to use PySpark to perform profiling and a deeper cleaning o
 ### Instructions to Run Code
 
 1. Place the *clean.jar* file on Peel (you can find it in the directory *cleaning_profiling_dataset2/initial_mapreduce_cleaning/clean.jar* ): <br/>
-`scp <path to clean.jar on local computer> <path to clean.jar on Peel>`
+`scp <path to *clean.jar* on local computer> <path to clean.jar on Peel>`
 2. Log-in to Peel and run the MapReduce job in *cleaning_profiling_dataset2/initial_mapreduce_cleaning/* to make an initial clean of dataset2. The directory with the input file in HDFS has been shared with the graders. You must choose a directory to output the result. <br/>
 `yarn jar`
 `hadoop jar clean.jar Clean </user/mps565/big-data-project/dataset_initial.csv <path to result from step 2>`
@@ -156,10 +156,17 @@ It was later decided to use PySpark to perform profiling and a deeper cleaning o
 ### Troubleshooting
 
 If permission errors appear when opening the files, follow the instructions below:
-1. Place the input files with dataset1 and dataset2 (`cleaning_profiling_dataset1/GHED_data.csv` and ` cleaning_profiling_dataset2/dataset_initial.csv`) onto hdfs:  <br/>
+1. Place the *clean.jar* file and the 2 initial datasets *GHED_data.csv* and *dataset_initial.csv* on Peel <br/>
+	* *clean.jar* can be found in the directory cleaning_profiling_dataset2/initial_mapreduce_cleaning/
+	* *GHED_data.csv* can be found in the directory cleaning_profiling_dataset1/GHED_data.csv
+	* *dataset_initial.csv* can be found in the directory cleaning_profiling_dataset2/dataset_initial.csv 
+`scp <path to *clean.jar* on local computer> <path to *clean.jar* on Peel>`
+`scp <path to *GHED_data.csv* on local computer> <path to *GHED_data.csv* on Peel>`
+`scp <path to *dataset_initial.csv* on local computer> <path to *dataset_initial.csv* on Peel>`
+2. Place the input files with dataset1 and dataset2 (`cleaning_profiling_dataset1/GHED_data.csv` and ` cleaning_profiling_dataset2/dataset_initial.csv`) onto hdfs:  <br/>
 `hdfs dfs -put <path to dataset1 in peel> <path to dataset1 in hdfs>` <br/>
 `hdfs dfs -put <path to dataset2 in peel> <path to dataset2 in hdfs>`
-2. Compile and run the MapReduce job in `cleaning_profiling_dataset2/initial_mapreduce_cleaning/` to make an initial clean of dataset2.<br/>
+3. Compile and run the MapReduce job in `cleaning_profiling_dataset2/initial_mapreduce_cleaning/` to make an initial clean of dataset2.<br/>
 `hadoop jar clean.jar Clean <path to dataset2 in hdfs> <path to output>`
 3. Connect to python Spark interactive Shell: <br/>
 `module load python/gcc/3.7.9` <br/>
