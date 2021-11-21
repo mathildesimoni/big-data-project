@@ -69,7 +69,7 @@ The format used for this directory is different to that specified in the assignm
 * Finally, access was shared with graders and teammates
 
 #### Cleaning and Profiling for dataset1 (health expenditure)
-* An initial profiling cleaning was done with two MapReduce jobs (contained in the initial_mapreduce_cleaning directory). 
+* An initial profiling and cleaning was done with two MapReduce jobs (contained in the cleaning_profiling_dataset1/initial_mapreduce_cleaning/ directory). 
   1. Initial Profiling <br/>
   The CountRecs job was first used to count the number of records in the original dataset1. The number of rows output was 3648. 
   2. Initial Cleaning <br/>
