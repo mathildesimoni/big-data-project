@@ -13,6 +13,7 @@ Fall 2021 <br/>
 This application aims to find the correlation between the type of health care system of a country and the country’s total health expenditure. 
 
 ### Files
+The format used for this directory is different to that specified in the assignment instruction, since in order to test how the data cleaning affected the data, data cleaning and profiling steps were intercalated. The directory organization format shown below was used since it was a clear and simpler way of organizing the files and code.
 * cleaning_profiling_dataset1/ : *directory with files to clean and profile dataset 1*
    * initial_mapreduce_cleaning/ : *direcotry with files for initial cleaning and profiling in the form of a java MapReduce job*
       * Clean.class : *compiled main function for the java cleaning MapReduce job*
