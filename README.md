@@ -113,7 +113,7 @@ It was later decided to use PySpark to perform profiling and a deeper cleaning o
 		* "duplicate_private_coverage"
 		* "complementary_private_coverage"
 		* "supplementary_private_coverage"
-    * For each column, countries with the minimum, maximum and mean values were displayed.
+    * For each column, countries with the minimum and maximum values were displayed.
 
   2. Cleaning
    * Column names were renamed to improve readability and usability of the dataset (e.g. "_c3" was renamed to "total_private_coverage").
