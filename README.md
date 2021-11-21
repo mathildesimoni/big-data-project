@@ -127,7 +127,7 @@ It was later decided to use PySpark to perform profiling and a deeper cleaning o
 *Screenshots for this step can be found in the directory screenshots/etl_cleaning_profiling_dataset2/pyspark_cleaning_and_profiling/*
 
 #### Merging and First correlation
-* It was decided to merge the 2 dataframes `governmental_coverage_df` and `expenses_df` and calculate a correlation for each year between 2014 and 2018.
+* It was decided to merge the 2 dataframes *governmental_coverage_df* and *expenses_df* and calculate a correlation for each year between 2014 and 2018.
    * First, the 2 dataframes were filtered to only keep data for the year being analyzed.
    * Then, they were merged in a new dataframe `df` using the pyspark inner join function based on the country name.
    * Finally, the corellation was calculated using the pyspark corr function.
