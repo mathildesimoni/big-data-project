@@ -35,7 +35,7 @@ The format used for this directory is different to that specified in the assignm
    * GHED_data.csv : *copy of dataset1 containing information of healthcare expenses by country and year* 
    * expenses_data_cleaning_and_profiling.py : *final pyspark script to clean and profile dataset1*
 * cleaning_profiling_dataset2/ : *directory with files to clean and profile dataset 2*
-  * initial_mapreduce_cleaning/ : *direcotry with files for initial cleaning and profiling in the form of a java MapReduce job*
+  * initial_mapreduce_cleaning/ : *directory with files for initial cleaning and profiling in the form of a java MapReduce job*
       * Clean.class : *compiled main function for the java cleaning MapReduce job*
       * Clean.java : *main function for the java cleaning MapReduce job*
       * CleanMapper.class : *compiled mapper function for the java cleaning MapReduce job*
