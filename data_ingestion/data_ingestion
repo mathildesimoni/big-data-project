@@ -25,12 +25,9 @@ hdfs dfs -put dataset_initial.csv big-data-project
 hdfs dfs -ls big-data-project
 
 # provide access to adm209, nks8839, and sj3549 and cgm396
-hdfs dfs -setfacl -R -m user:adm209:rwx big-data-project
-hdfs dfs -setfacl -R -m user:nks8839:rwx big-data-project
-hdfs dfs -setfacl -R -m user:sj3549:rwx big-data-project
-hdfs dfs -setfacl -R -m user:cgm396:rwx big-data-project
-hdfs dfs -setfacl -R -m default:user:adm209:rwx big-data-project
-hdfs dfs -setfacl -R -m default:user:nks8839:rwx big-data-project
-hdfs dfs -setfacl -R -m default:user:sj3549:rwx big-data-project
-hdfs dfs -setfacl -R -m default:user:cgm396:rwx big-data-project
+
+hdfs dfs -setfacl -R -m user:adm209:rwx /user/mps565/big-data-project
+hdfs dfs -setfacl -R -m user:nks8839:rwx /user/mps565/big-data-project
+hdfs dfs -setfacl -R -m user:sj3549:rwx /user/mps565/big-data-project
+hdfs dfs -setfacl -R -m user:cgm396:rwx /user/mps565/big-data-project
 hdfs dfs -getfacl big-data-project
