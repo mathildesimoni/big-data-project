@@ -89,7 +89,7 @@ It was later decided to use PySpark to perform a deeper cleaning and profiling o
     
   2. Cleaning
     * Column names were renamed to improve readability and usability of the dataset (e.g. "income group (2018)" was renamed to "income_group").
-    * The data types of the six main helath expenditure columns were casted to integer to be able to perform mathematical operations on these.
+    * The data types of the six main health expenditure columns were casted to integer to be able to perform mathematical operations on these.
     * Only the "country", "income_group", "year", "che_pc_usd" columns were selected for the cleaned version of dataset1 since these would be the columns of interest for merging and the analytic.
     * The dataframe was filtered to only keep data for the last five years present in the dataset (2018 to 2014, inclusive).
     * All remaining records with NULL values were shown and since these formed a very small minority of the total records in the dataset, they were dropped.
