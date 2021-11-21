@@ -164,8 +164,8 @@ If permission errors appear when opening the files, follow the instructions belo
 `scp <path to GHED_data.csv on local computer> <path to GHED_data.csv on Peel>` <br/>
 `scp <path to dataset_initial.csv on local computer> <path to dataset_initial.csv on Peel>` <br/>
 2. Log-in to Peel and place the 2 initial datasets onto hdfs:  <br/>
-`hdfs dfs -put <path to GHED_data.csv in peel> <path to GHED_data.csv in hdfs>` <br/>
-`hdfs dfs -put <path to dataset_initial.csv in peel> <path to dataset_initial.csv in hdfs>`
+`hdfs dfs -put <path to GHED_data.csv on Peel> <path to GHED_data.csv in hdfs>` <br/>
+`hdfs dfs -put <path to dataset_initial.csv on Peel> <path to dataset_initial.csv in hdfs>`
 3. Compile and run the MapReduce job in `cleaning_profiling_dataset2/initial_mapreduce_cleaning/` to make an initial clean of dataset2 (*dataset_initial.csv*).<br/>
 `yarn jar`
 `hadoop jar clean.jar Clean <path to dataset_initial.csv in hdfs> <path to result>`
